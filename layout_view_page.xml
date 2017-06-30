@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    <LinearLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/appname"
+        android:hint="Project name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+
+        android:inputType="textCapWords"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:id="@+id/members"
+        android:hint="Member Names"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:layout_below="@+id/appname"
+        android:layout_alignStart="@+id/appname" />
+
+    <EditText
+        android:id="@+id/desc"
+        android:hint="Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:layout_below="@+id/members"
+        android:layout_alignStart="@+id/members" />
+
+    <EditText
+        android:id="@+id/status"
+        android:hint="Status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:layout_below="@+id/desc"
+        android:layout_alignStart="@+id/desc" />
+
+    <EditText
+        android:id="@+id/link"
+        android:hint="DownloadLink(App name in playstore)"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:layout_below="@+id/status"
+        android:layout_alignStart="@+id/status" />
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="upload image"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/link"
+            android:layout_alignStart="@+id/logout"
+           ></Button>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="submit"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/link"
+        android:layout_alignStart="@+id/logout"
+        android:background="@color/colorPrimary"
+        />
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/submit"
+            android:layout_alignStart="@+id/link"
+            android:background="@color/colorPrimary"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

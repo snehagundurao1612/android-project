@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="Application Name :"
+        android:layout_alignParentTop="true"
+       android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/app_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/app"
+        />
+    <TextView
+        android:id="@+id/mem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+
+        android:text="Members : "
+        android:layout_below="@+id/app"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/mem_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+
+        android:layout_toEndOf="@+id/mem"
+        android:layout_below="@+id/app_text"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+
+        android:text="Description :"
+        android:layout_below="@+id/mem_text"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/desc_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+
+        android:layout_toEndOf="@+id/desc"
+        android:layout_below="@+id/mem_text"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+
+        android:text="Status :"
+        android:layout_below="@+id/desc_text"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+
+        android:layout_toEndOf="@+id/status"
+        android:layout_below="@+id/desc_text"
+        android:textSize="20dp"
+       />
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+
+        android:text="Download Link :"
+        android:layout_below="@+id/status_text"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/link_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/link"
+        android:linksClickable="true"
+        android:onClick="click_link"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/status_text"
+        />
+        <ImageView
+            android:layout_width="380dp"
+            android:layout_height="380dp"
+            android:src="@drawable/common_full_open_on_phone"
+            android:id="@+id/imageView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/link"
+            android:layout_above="@+id/button_done" />
+    <Button
+        android:id="@+id/button_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:background="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
